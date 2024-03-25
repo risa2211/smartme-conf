@@ -1,0 +1,35 @@
+body {
+    align-items: center;
+    justify-content: center;
+}
+.slider {
+    height: 100px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: auto;
+}
+.slider .slide-tracker {
+    animation: scroll 30s linear infinite;
+    animation-iteration-count: infinite;
+    display: flex;
+    width: auto;
+}
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-250px * 14));
+    }
+}
+.slider .logo { 
+    height: 100px;
+    width: 180px;
+    margin-right: 100px;
+    justify-content: space-between;
+}
+.logo img {
+    width: 200px;
+    height: auto;
+}
